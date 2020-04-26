@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 import express from 'express';
 import Youch from 'youch';
+import cors from 'cors';
 import * as Sentry from '@sentry/node';
 import { resolve } from 'path';
 import 'express-async-errors';
@@ -18,6 +19,7 @@ class App {
     Sentry.init(sentryConfig);
 
     this.server.use(Sentry.Handlers.requestHandler());
+    this.server.use(cors());
     this.middlewares();
     this.routes();
     this.server.use(Sentry.Handlers.errorHandler());

@@ -11,6 +11,8 @@ export const Container = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  opacity: ${({ past }) => (past ? 0.7 : 1)};
 `;
 
 export const Left = styled.View`

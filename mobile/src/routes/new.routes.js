@@ -31,7 +31,22 @@ export default function NewRoutes() {
           ),
         })}
       />
-      <Screen name="SelectDateTime" component={SelectDateTime} />
+
+      <Screen
+        name="SelectDateTime"
+        component={SelectDateTime}
+        options={({ navigation }) => ({
+          title: 'Selecione a data',
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() => navigation.navigate('SelectProvider')}
+            >
+              <Icon name="chevron-left" size={20} color="#fff" />
+            </TouchableOpacity>
+          ),
+        })}
+      />
+
       <Screen name="Confirm" component={Confirm} />
     </Navigator>
   );

@@ -45,24 +45,65 @@
 ## 🌐 WEB
 
 <h1 align="center">
-    GIF WEB
+    <img src=".github/gobarber-web.gif" />
 </h1>
 
 ## 📱 Mobile
 
 <h1 align="center">
-    GIF MOBILE
+    <img src=".github/gobarber-mobile.gif" />
 </h1>
 
-## 🚀 Tecnologias
+## 🚀 Principais Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React](https://reactjs.org)
-- [Axios](https://github.com/axios/axios)
+- [Node](https://nodejs.org/en/)
+- [Expo](https://docs.expo.io/)
 - [Styled Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
+- [Date-fns](https://date-fns.org/)
+- [JsonWebToken](https://github.com/auth0/node-jsonwebtoken)
+- [Sequelize](https://sequelize.org/)
+- [Express](https://expressjs.com/pt-br/)
+- [Multer](https://www.npmjs.com/package/multer)
+- [Bee-queue](https://github.com/bee-queue/bee-queue)
+- [NodeMailer](https://nodemailer.com/about/)
+- [Redux](https://redux.js.org/)
+- [Redux-saga](https://redux-saga.js.org/)
+- [UnForm](https://github.com/Rocketseat/unform)
+- [React Router DOM](https://reacttraining.com/react-router/web/guides/quick-start)
+- [React Navigation](https://reactnavigation.org/)
 
 <br />
+
+## 🔥 Instalação
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/ronnyacacio/go-barber.git
+
+# Crie um arquivo .env na pasta backend e o preencha conforme o arquivo .env.example
+# Crie um banco de dados postgres na sua máquina com o nome go-barber
+
+# Navegue até a pasta backend e execute os seguintes comandos:
+$ yarn
+$ yarn sequelize db:migrate
+$ yarn dev
+$ yarn queue
+
+# Depois disso, entre na pasta web e execute os comandos:
+$ yarn
+$ yarn start
+
+# E finalmente, entre na pasta mobile e execunte os comandos:
+$ yarn
+$ expo start
+
+# Observações:
+- Não esqueça de mudar a baseURL no arquivo `src/services/api.ts` da pasta e mobile para o IP da sua máquina
+```
 
 <p align="center">
   Made with 💜 by <a href="https://www.linkedin.com/in/ronnyacacio/"> Ronny Acácio </a>

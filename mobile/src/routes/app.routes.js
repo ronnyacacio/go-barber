@@ -2,6 +2,8 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons as Icon } from '@expo/vector-icons';
 
+import NewRoutes from './new.routes';
+
 import Dashboard from '../screens/Dashboard';
 import Profile from '../screens/Profile';
 
@@ -9,6 +11,7 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 const icons = {
   Dashboard: 'event',
+  New: 'add-circle-outline',
   Profile: 'person',
 };
 
@@ -36,6 +39,15 @@ export default function AppRoutes() {
         component={Dashboard}
         options={{
           title: 'Agendamentos',
+        }}
+      />
+
+      <Screen
+        name="New"
+        children={NewRoutes}
+        options={{
+          title: 'Agendar',
+          tabBarVisible: false,
         }}
       />
 

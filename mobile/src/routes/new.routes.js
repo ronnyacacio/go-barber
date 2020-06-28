@@ -38,9 +38,7 @@ export default function NewRoutes() {
         options={({ navigation }) => ({
           title: 'Selecione a data',
           headerLeft: () => (
-            <TouchableOpacity
-              onPress={() => navigation.navigate('SelectProvider')}
-            >
+            <TouchableOpacity onPress={() => navigation.goBack()}>
               <Icon name="chevron-left" size={20} color="#fff" />
             </TouchableOpacity>
           ),

@@ -48,6 +48,7 @@ export default function AppRoutes() {
         options={{
           title: 'Agendar',
           tabBarVisible: false,
+          unmountOnBlur: true,
         }}
       />
 

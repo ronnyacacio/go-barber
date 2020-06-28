@@ -32,7 +32,7 @@
 
 ## 💻 Projeto
 
-🚧 Em construção
+Esse projeto foi feita para automatizar o processo de agendamentos em estabelecimentos de beleza, onde prestadores de serviços, que utilizam a aplicação WEB, podem se cadastrar, e usuários poderão marcar agendamentos com estes provedores pela aplicação mobile. A aplicação é bem completa, com envio de emails para os prestadores de acordo com as ações dos clientes na parte mobile.
 
 <br />
 

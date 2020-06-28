@@ -45,7 +45,18 @@ export default function NewRoutes() {
         })}
       />
 
-      <Screen name="Confirm" component={Confirm} />
+      <Screen
+        name="Confirm"
+        component={Confirm}
+        options={({ navigation }) => ({
+          title: 'Confirmar',
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.goBack()}>
+              <Icon name="chevron-left" size={20} color="#fff" />
+            </TouchableOpacity>
+          ),
+        })}
+      />
     </Navigator>
   );
 }
